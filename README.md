@@ -203,3 +203,6 @@ Hermes 插件版是旧方案，仍然可用。
 
 这个目录是独立版：它已经内置一批 Hermes 平台 adapter，并用 `StandaloneGatewayRunner`
 把平台消息直接接到 Codex，不再需要 Hermes Gateway 先运行。
+
+
+友链：https://linux.do/
