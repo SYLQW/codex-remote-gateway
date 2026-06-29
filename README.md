@@ -29,7 +29,6 @@
 - `integrations/hermes-plugin`
   Hermes Gateway 兼容包装层，只负责把 Hermes hook 接到 standalone 核心。
 
-Hermes 插件版可以继续跑；这个目录是独立化后的项目。
 
 ## 安装
 
