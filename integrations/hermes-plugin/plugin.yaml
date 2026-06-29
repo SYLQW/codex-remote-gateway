@@ -1,0 +1,6 @@
+name: codex-remote-gateway
+version: 0.1.0
+description: "Bridge Hermes gateway chats to local Codex Desktop threads."
+author: "local"
+hooks:
+  - pre_gateway_dispatch

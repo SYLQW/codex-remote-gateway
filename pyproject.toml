@@ -1,0 +1,57 @@
+[project]
+name = "codex-remote-gateway"
+version = "0.1.0"
+description = "Bridge remote chat messages to local Codex Desktop threads."
+requires-python = ">=3.10"
+dependencies = [
+    "websockets>=12,<16",
+]
+
+[project.optional-dependencies]
+weixin = [
+    "aiohttp>=3.9,<4",
+    "cryptography>=42,<47",
+]
+dingtalk = [
+    "dingtalk-stream>=0.20,<1",
+    "httpx>=0.28,<1",
+    "alibabacloud-dingtalk>=2,<3",
+    "alibabacloud-tea-openapi>=0.3,<1",
+    "alibabacloud-tea-util>=0.3,<1",
+    "qrcode>=7,<9",
+]
+telegram = [
+    "python-telegram-bot[webhooks]>=22,<23",
+]
+slack = [
+    "slack-bolt>=1.20,<2",
+    "slack-sdk>=3.30,<4",
+    "aiohttp>=3.9,<4",
+]
+feishu = [
+    "lark-oapi>=1.4,<2",
+    "qrcode>=7,<9",
+]
+all-platforms = [
+    "aiohttp>=3.9,<4",
+    "cryptography>=42,<47",
+    "dingtalk-stream>=0.20,<1",
+    "httpx>=0.28,<1",
+    "alibabacloud-dingtalk>=2,<3",
+    "alibabacloud-tea-openapi>=0.3,<1",
+    "alibabacloud-tea-util>=0.3,<1",
+    "qrcode>=7,<9",
+    "python-telegram-bot[webhooks]>=22,<23",
+    "slack-bolt>=1.20,<2",
+    "slack-sdk>=3.30,<4",
+    "lark-oapi>=1.4,<2",
+]
+
+[project.scripts]
+codex-remote-gateway = "codex_remote_gateway.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["codex_remote_gateway*", "gateway*", "tools*"]
+
+[tool.setuptools]
+py-modules = ["hermes_constants", "utils"]

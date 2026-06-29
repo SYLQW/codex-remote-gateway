@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local runtime state and secrets
+.env
+.env.*
+!.env.example
+config.json
+*.log
+runtime/
+logs/
+context-tokens.json
+*.context-tokens.json
